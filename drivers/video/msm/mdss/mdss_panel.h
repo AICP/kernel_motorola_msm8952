@@ -520,8 +520,6 @@ struct mdss_mdp_pp_tear_check {
 	u32 refx100;
 };
 
-struct mdss_livedisplay_ctx;
-
 struct mdss_panel_info {
 	u32 xres;
 	u32 yres;
@@ -611,8 +609,6 @@ struct mdss_panel_info {
 	bool is_dba_panel;
 	/* debugfs structure for the panel */
 	struct mdss_panel_debugfs_info *debugfs_info;
-
-	struct mdss_livedisplay_ctx *livedisplay;
 
 	u32 disp_on_check_val;
 	bool blank_progress_notify_enabled;
